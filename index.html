@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+		<title>Gerador de Senha</title>
+	</head>
+	<body>
+		<main>
+			<div class="container__circle">
+				<div class="circle circle-1"></div>
+				<div class="circle circle-2"></div>
+				<div class="circle circle-3"></div>
+			</div>
+			<h1>
+				<span class="span__color">import</span>
+				<span class="span__color" id="span__color-pink">
+					{ gerarSenha }</span
+				>
+				<span class="span__color"> from</span>
+				<span class="span__color" id="span__color-pink"
+					>"thiagomatsuzaki.js"</span
+				>
+			</h1>
+
+			<!-- <button id="button__password-generator">Gerar senha</button> -->
+			<div>
+				<p>Adicionar restrições</p>
+			</div>
+
+			<div class="container">
+				<div>
+					<label for="checkbox__minuscula">Minuscula</label>
+					<div class="container__inputs">
+						<input
+							id="checkbox__minuscula"
+							type="checkbox"
+							name=""
+							id=""
+						/>
+						<label for="checkbox__minuscula"> [a - z ]</label>
+					</div>
+				</div>
+
+				<div>
+					<label for="checkbox__maiscula">Maiscula</label>
+					<div class="container__inputs">
+						<input
+							id="checkbox__maiscula"
+							type="checkbox"
+							name=""
+						/>
+						<label for="checkbox__maiscula"> [A - Z]</label>
+					</div>
+				</div>
+				<div>
+					<label for="checkbox__numero">Numeros</label>
+					<div class="container__inputs">
+						<input
+							id="checkbox__numero"
+							type="checkbox"
+							name=""
+							id=""
+						/>
+						<label for="checkbox__numero"> [0 - 9]</label>
+					</div>
+				</div>
+				<div>
+					<label for="checkbox__simbolo">Simbolos</label>
+					<div class="container__inputs">
+						<div>
+							<input
+								id="checkbox__simbolo"
+								type="checkbox"
+								name=""
+								id=""
+							/>
+							<label for="checkbox__simbolo"> [! @ # $ %]</label>
+						</div>
+					</div>
+				</div>
+				<div>
+					<label for="checkbox__emoji">Emojis</label>
+					<div class="container__inputs">
+						<div>
+							<input
+								id="checkbox__emoji"
+								type="checkbox"
+								name=""
+							/>
+							<label for="checkbox__emoji">
+								[&#127829; &#128526; &#128075;]</label
+							>
+						</div>
+					</div>
+				</div>
+				<div>
+					<label for="input__range">Quantidade de caracteres</label>
+					<div class="container__inputs">
+						<div id="container__parent-input-range">
+							<input
+								id="input__range"
+								type="range"
+								name=""
+								min="5"
+								max="99"
+								step="1"
+								value="50"
+							/>
+							<label id="input__range__value" for="input__range">
+								50</label
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<span id="container__span__entropy-password"
+				>Nivel:<span id="span__entropy-password">Fraco</span></span
+			>
+			<div class="container__password">
+				<div class="wrapper__password">
+					<span class="unselectable">C:\&gt</span>
+					<span id="password__text"
+						>eyJiULkPAGX6czQVtjV^Wd*bj9zcyW#kkhHW!f2vm4LMppmGWjKQNxekL@cHnBMN4vD2o7cTH$4Vwgkq%knwq9Pmpz*GzcY&^ZW</span
+					>
+				</div>
+
+				<button class="button" id="button__generate">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-rotate-360"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M12 16h4v4" />
+						<path
+							d="M19.458 11.042c.86 -2.366 .722 -4.58 -.6 -5.9c-2.272 -2.274 -7.185 -1.045 -10.973 2.743c-3.788 3.788 -5.017 8.701 -2.744 10.974c2.227 2.226 6.987 1.093 10.74 -2.515"
+						/>
+					</svg>
+					Gerar
+				</button>
+				<button class="button" id="button__copy">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-clipboard"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path
+							d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+						/>
+						<path
+							d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+						/>
+					</svg>
+					Copiar
+				</button>
+			</div>
+		</main>
+		<footer>
+			<a
+				href="https://www.linkedin.com/in/thiago-matsuzaki-22241b219/"
+				target="_blank"
+				>by @thiagomatsuzaki ✌</a
+			>
+		</footer>
+	</body>
+	<script defer src="js/script.js"></script>
+</html>
