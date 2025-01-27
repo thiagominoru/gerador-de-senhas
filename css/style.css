@@ -42,7 +42,7 @@ body::before {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url("/assets/background.gif");
+	background-image: url("../assets/background.gif");
 	background-size: cover;
 	filter: brightness(0.3) blur(5px);
 	height: 100%;
