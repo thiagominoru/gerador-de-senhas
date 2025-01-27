@@ -43,8 +43,10 @@ Gerar senhas a partir de opções com características especificas que são sele
 
 Estmativa da força da senha foi escolhido de maneira arbitrária ( senhas relativamente de tamanho mediano ainda serão consideradas como fracas ).
 
-Você pode encontrar mais sobre em [Password Entropy](baseando em Password Entropy)
+Você pode encontrar mais sobre em [Password Entropy](https://en.wikipedia.org/wiki/Password_strength)
 
 &nbsp;
 
 ## 👀 _Preview_
+![image alt](https://github.com/thiagominoru/gerador-de-senhas/blob/main/preview_1.png?raw=true)
+![image alt](https://github.com/thiagominoru/gerador-de-senhas/blob/main/preview_2.png?raw=true)
